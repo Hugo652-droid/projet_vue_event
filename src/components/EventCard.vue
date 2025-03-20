@@ -5,6 +5,8 @@
     <span>{{ event.category }}</span>
     <span>{{ event.date }}</span>
     <span>{{ event.time }}</span>
+    <button @click="deleteEnvents(event.id)">Supprimer</button>
+    <button>Modifier</button>
   </div>
 </template>
 
@@ -13,6 +15,11 @@ export default {
   name: 'EventCard',
   props: {
     events: Object,
+  },
+  methods: {
+    deleteEnvents(id) {
+      this.$emit('delete-events', id)
+    },
   },
 }
 </script>

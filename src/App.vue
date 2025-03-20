@@ -1,7 +1,8 @@
 <template>
   <nav>
     <router-link to="/">Evénements</router-link> |
-    <router-link to="/about">A propos</router-link>
+    <router-link to="/about">A propos</router-link> |
+    <router-link to="/new">Nouveau</router-link>
   </nav>
   <router-view />
 </template>
@@ -28,3 +29,4 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup lang="ts"></script>
